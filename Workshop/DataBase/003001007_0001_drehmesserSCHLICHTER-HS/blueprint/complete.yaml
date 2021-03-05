@@ -1,0 +1,77 @@
+Units:
+    Length: mm
+    Angle: Degree
+    Torque: Nm
+    Pressure: Bar
+Technical Data: 
+    General: 
+        Name: SCHLICHTER-HS
+        ToolType: 16
+        SpindleDirection: -1
+        Comment: 
+    Simulation: 
+        SimulationColor: 16744703
+    Holder:
+            HolderHand: 1
+            HolderReliefAngle: 52
+            HolderClearanceAngle: 2
+            CuttingEdgeAngle: -3
+            CuttingEdgeAngleReference: 4
+            Wo: 1
+            OverallLength: NA
+    Shank: 
+        ShankDiameter: NA
+        NeckDiameter: NA
+        ShankAngle: NA
+        ReachLength: NA
+        ShankExtension: NA
+    Cutter: 
+        OverallLength: NA
+        ToolDiameter: NA
+        CuttingLength: NA
+        FluteCount: NA
+        ProfileRadius: NA
+        ToolAngle: NA
+        ThreadAngle: NA
+        Pitch: NA
+        ThreadPerUnit: NA
+        TipAngle: NA
+        TipLength: NA
+        StepLength: NA
+        TipDiameter: NA
+        TopDiameter: NA
+        TopProfileRadius: NA
+        ThreadMillType: NA
+        ChamferShape: NA
+        MaximumPlungeAngle: NA
+    Insert: 
+        InsertShape: 7
+        CornerRadius: 0.10000000000000001
+        InsertAngle: 35
+        InsertICDiameter: 6.3093409999999999
+        InsertLength: 11
+        InsertWidth: 1.22
+        InsertThickness: 4
+        InsertName: 
+        InsertComment: 
+        InsertClearanceAngle: 2
+        InsertHand: 1
+        ThreadHand: 1
+        ThreadType: 7
+        InsertBodyWidth: 1.22
+        InsertBodyLength: 
+        InsertDimensionX: NA
+        InsertDimensionY: NA
+        NumberOfInserts: 1
+    Mounting: 
+        MagazineNumber: 
+        MagazineLocationNumber: 
+    NC properties: 
+        Number: 
+        NcName: 
+        ToolOffsetRegister: 
+        EdgeShiftRegister: 
+    Tooloffsets properties: 
+        CuttingEdgePosition: 
+        ControlEdge: 
+        OffsetConfigurationNumber: 

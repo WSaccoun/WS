@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GDML version="2.0">
+	<Content>
+		<GdmlInfo>
+			<DocumentInfo>
+				<KeyNode>MachineSetup</KeyNode>
+				<Application version="2020.13.206.4475">SimNCControllerApiGfx</Application>
+				<Created>2020-11-10T12:42:51+01:00</Created>
+				<CreatedBy name="Patrick@LAPTOP-CDP-PSC"/>
+				<Modified>2020-11-10T12:42:51+01:00</Modified>
+				<ModifiedBy name="Patrick@LAPTOP-CDP-PSC"/>
+			</DocumentInfo>
+		</GdmlInfo>
+		<MachineSetup name="unnamed Setup">
+			<Annotation name="#cutter176">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;GDML version="2.0"&gt;
+	&lt;Content&gt;
+		&lt;GdmlInfo id="MachineComponent"/&gt;
+		&lt;MachineComponent&gt;
+			&lt;Tool nodeName="BOHRER VHM-5.0"&gt;
+				&lt;CutterShape&gt;
+					&lt;Material color="255 255 0" specularIntensity="128 128 128"/&gt;
+					&lt;Solid&gt;
+						&lt;Revolve accuracy="0.048036798991923924"&gt;
+							&lt;Contour startPoint="0 -0"&gt;
+								&lt;Line endPoint="50 -0"/&gt;
+								&lt;Line endPoint="50 2.4999999999999969"/&gt;
+								&lt;Line endPoint="0.90992558566550608 2.5"/&gt;
+								&lt;Line endPoint="0 -0"/&gt;
+							&lt;/Contour&gt;
+						&lt;/Revolve&gt;
+						&lt;Transformation&gt;
+							&lt;Rotation rotAxis="0 1 0" rotAngle="-90"/&gt;
+						&lt;/Transformation&gt;
+					&lt;/Solid&gt;
+				&lt;/CutterShape&gt;
+				&lt;Shape&gt;
+					&lt;Material color="192 192 192" specularIntensity="128 128 128"/&gt;
+					&lt;Solid&gt;
+						&lt;Revolve accuracy="0.048036798991923924"&gt;
+							&lt;Contour startPoint="50 0"&gt;
+								&lt;Line endPoint="50 -2.4999999999999969"/&gt;
+								&lt;Line endPoint="51 -2.4999999999999969"/&gt;
+								&lt;Line endPoint="51 0"/&gt;
+								&lt;Line endPoint="50 0"/&gt;
+							&lt;/Contour&gt;
+						&lt;/Revolve&gt;
+						&lt;Transformation&gt;
+							&lt;Rotation rotAxis="0 1 0" rotAngle="-90"/&gt;
+						&lt;/Transformation&gt;
+					&lt;/Solid&gt;
+				&lt;/Shape&gt;
+				&lt;Transformation&gt;
+					&lt;Translation trans="0 0 -51"/&gt;
+				&lt;/Transformation&gt;
+				&lt;ToolData technologyType="MILLING CENTERMILLING"/&gt;
+			&lt;/Tool&gt;
+		&lt;/MachineComponent&gt;
+	&lt;/Content&gt;
+&lt;/GDML&gt;</Annotation>
+			<Annotation name="AssemblyType">Tool</Annotation>
+			<Annotation name="ToolAssembly_5_KbmDatabaseId">88f4dafb-966d-4634-adfe-7846bca34efb</Annotation>
+			<Annotation name="ToolAssembly_5_Name">HYDROD_DM6x80_rewotec_19.02.2020_93.T5.036.009</Annotation>
+			<Annotation name="ToolAssembly_5_Reference"></Annotation>
+			<Annotation name="ToolAssembly_5_StationID">0</Annotation>
+			<Annotation name="ToolAssembly_5_TurretID">0</Annotation>
+			<Annotation name="Tool_176_Name">BOHRER VHM-5.0</Annotation>
+			<Annotation name="Tool_176_Technology">BEGIN_PROCESS; Prozessname; 5;
+BEGIN_OPERATION; 156; BOHRER VHM-5.0; 0;
+   BEGIN_VERSION;
+      MAJOR_VERSION; 1;
+      MINOR_VERSION; 0;
+   END_VERSION;
+   Comment; 7; ;  CAPTION; Kommentar; SOURCE; 1; TECHCODETYPE; 3;
+	BEGIN_STRING; 7;;
+		:
+	END_STRING
+   ToolNumber; 101; 10;  CAPTION; Werkzeugnummer; SOURCE; 2; TECHCODETYPE; 1;
+   ToolDiameter; 103; 5;  CAPTION; Werkzeugdurchmesser; SOURCE; 2; TECHCODETYPE; 2;
+   ToolLength; 105; 51;  CAPTION; Werkzeuglänge; SOURCE; 2; TECHCODETYPE; 2;
+   TipAngle; 108; 140;  CAPTION; Spitzenwinkel; SOURCE; 2; TECHCODETYPE; 2;
+   ToolStyle; 110; 2;  CAPTION; Werkzeugtyp; SOURCE; 1; TECHCODETYPE; 376;
+   NumberOfFlutes; 111; 1;  CAPTION; Anzahl Schneiden; SOURCE; 2; TECHCODETYPE; 1;
+   ToolTip; 113; 0.90992558566550608;  LOCKED; CAPTION; Anschnitt; SOURCE; 3; TECHCODETYPE; 2;
+   LengthCompRegister; 121; 10;  HIDDEN; CAPTION; Längenkorrektur-Reg.; SOURCE; 1; TECHCODETYPE; 1;
+   ToolShiftZ; 127; 0;  CAPTION; WZG-Versatz Z|WZG-Versatz X,Y,Z; SOURCE; 1; TECHCODETYPE; 2;
+   InitialClearance; 171; 50;  CAPTION; Schutzebene AbsolutZ; SOURCE; 1; TECHCODETYPE; 2;
+   SpindleDirection; 195; -1;  CAPTION; Spindeldrehrichtung; SOURCE; 1; TECHCODETYPE; 6;
+   Coolant; 214; 0;  CAPTION; Kühlung; SOURCE; 2; TECHCODETYPE; 50;
+   ToolMaterial; 420; ;  CAPTION; Beschichtung; SOURCE; 2; TECHCODETYPE; 3;
+	BEGIN_STRING; 420;;
+		:{6d6446c8-0ec6-4324-9bab-79973ea8d60e}
+	END_STRING
+   ToolID; 498; ;  CAPTION; Werkzeug ID; SOURCE; 2; TECHCODETYPE; 3;
+	BEGIN_STRING; 498;;
+		:bohrerVHM-5.0
+	END_STRING
+   ToolShiftX; 526; 0;  CAPTION; WZG-Versatz X|WZG-Versatz X,Y,Z; SOURCE; 1; TECHCODETYPE; 2;
+   ToolUnit; 813; 71;  CAPTION; Einheit; SOURCE; 2; TECHCODETYPE; 12;
+   Orientation; 842; 4;  CAPTION; Werkzeugausrichtung; SOURCE; 1; TECHCODETYPE; 316;
+   HolderDiameter; 850; 0.10000000000000001;  CAPTION; Halterdurchmesser; SOURCE; 2; TECHCODETYPE; 2;
+   ShankDiameter; 851; 5;  CAPTION; Schaftdurchmesser; SOURCE; 2; TECHCODETYPE; 2;
+   OverallLength; 852; 51;  CAPTION; Gesamtlänge; SOURCE; 2; TECHCODETYPE; 2;
+   CuttingLength; 853; 50;  CAPTION; Schneidenlänge; SOURCE; 2; TECHCODETYPE; 2;
+   ToolShiftY; 860; 0;  CAPTION; WZG-Versatz Y|WZG-Versatz X,Y,Z; SOURCE; 1; TECHCODETYPE; 2;
+   ToolVectorX; 1089; 1;  HIDDEN; CAPTION; Vektor X|Vektor X, Y, Z; SOURCE; 1; TECHCODETYPE; 2;
+   ToolVectorY; 1090; 0;  HIDDEN; CAPTION; Vektor Y|Vektor X, Y, Z; SOURCE; 1; TECHCODETYPE; 2;
+   ToolVectorZ; 1091; 0;  HIDDEN; CAPTION; Vektor Z|Vektor X, Y, Z; SOURCE; 1; TECHCODETYPE; 2;
+   SimulationColor; 1356; 65535;  CAPTION; Simulationsfarbe; SOURCE; 2; TECHCODETYPE; 1;
+   CustomSetting1; 1751; 0;  CAPTION; Custom Setting 1; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting2; 1752; 0;  CAPTION; Custom Setting 2; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting3; 1753; 0;  CAPTION; Custom Setting 3; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting4; 1754; 0;  CAPTION; Custom Setting 4; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting5; 1755; 0;  CAPTION; Custom Setting 5; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting6; 1756; 0;  CAPTION; Custom Setting 6; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting7; 1757; 0;  CAPTION; Custom Setting 7; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting8; 1758; 0;  CAPTION; Custom Setting 8; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting9; 1759; 0;  CAPTION; Custom Setting 9; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting10; 1760; 0;  CAPTION; Kuehlmitteldruck; SOURCE; 1; TECHCODETYPE; 2;
+   ShankType; 2520; 0;  CAPTION; Typ; SOURCE; 1; TECHCODETYPE; 425;
+   ShankTopDiameter; 2521; 25;  HIDDEN; CAPTION; Oberer Durchmesser; SOURCE; 1; TECHCODETYPE; 2;
+   ShankBottomLength; 2522; 40;  HIDDEN; CAPTION; Untere Länge; SOURCE; 1; TECHCODETYPE; 2;
+   ShankAngle; 2524; 15;  HIDDEN; CAPTION; Schaftwinkel; SOURCE; 1; TECHCODETYPE; 2;
+   ShankGeometry; 2546; 0;  HIDDEN; CAPTION; Geometrie importieren; SOURCE; 1; TECHCODETYPE; 234;
+	BEGIN_CUSTOM_GEO; 2546;;
+	END_CUSTOM_GEO
+   CoolantPressure; 6775; 1;  CAPTION; Kühlungsdruck; SOURCE; 1; TECHCODETYPE; 616;
+   ToolRotationX; 6783; 0;  CAPTION; Werkzeugrotation X|Werkzeugrotation X, Y, Z; SOURCE; 1; TECHCODETYPE; 2;
+   ToolRotationY; 6784; 0;  CAPTION; Werkzeugrotation Y|Werkzeugrotation X, Y, Z; SOURCE; 1; TECHCODETYPE; 2;
+   ToolRotationZ; 6785; 0;  CAPTION; Werkzeugrotation Z|Werkzeugrotation X, Y, Z; SOURCE; 1; TECHCODETYPE; 2;
+   NewCoolant; 7254; 1;  CAPTION; Kühlung; SOURCE; 1; TECHCODETYPE; 1;
+   BEGIN_SUB_TECHNOLOGY; 7451; 735; CAPTION; Kontrolpunktliste; SOURCE; 3; TECHCODETYPE; 410;
+   BEGIN_VERSION;
+      MAJOR_VERSION; 1;
+      MINOR_VERSION; 0;
+   END_VERSION;
+   LengthCompRegister; 121; 1;  CAPTION; Längenkorrektur-Reg.; SOURCE; 2; TECHCODETYPE; 1;
+   ControlPointType; 7460; 1;  LOCKED; HIDDEN; CAPTION; Typ; SOURCE; 0; TECHCODETYPE; 631;
+   ControlPointName; 7461; ;  LOCKED; HIDDEN; CAPTION; Name; SOURCE; 0; TECHCODETYPE; 3;
+	BEGIN_STRING; 7461;;
+		:
+	END_STRING
+   ZOffset; 7462; 0;  LOCKED; CAPTION; Z Aufmaß; SOURCE; 0; TECHCODETYPE; 2;
+   ID; 7463; 0;  CAPTION; Innendurchmesser; SOURCE; 0; TECHCODETYPE; 1;
+   BEGIN_EXPRESSION
+   END_EXPRESSION
+	BEGIN_ATTRIBUTES
+	END_ATTRIBUTES
+   END_SUB_TECHNOLOGY;
+   BEGIN_SUB_TECHNOLOGY; 7451; 735; CAPTION; Kontrolpunktliste; SOURCE; 3; TECHCODETYPE; 410;
+   BEGIN_VERSION;
+      MAJOR_VERSION; 1;
+      MINOR_VERSION; 0;
+   END_VERSION;
+   LengthCompRegister; 121; 10;  CAPTION; Längenkorrektur-Reg.; SOURCE; 1; TECHCODETYPE; 1;
+   ControlPointType; 7460; 2;  LOCKED; HIDDEN; CAPTION; Typ; SOURCE; 0; TECHCODETYPE; 631;
+   ControlPointName; 7461; ;  LOCKED; HIDDEN; CAPTION; Name; SOURCE; 0; TECHCODETYPE; 3;
+	BEGIN_STRING; 7461;;
+		:
+	END_STRING
+   ZOffset; 7462; 0.90992558566550608;  LOCKED; CAPTION; Z Aufmaß; SOURCE; 0; TECHCODETYPE; 2;
+   ID; 7463; 1;  CAPTION; Innendurchmesser; SOURCE; 0; TECHCODETYPE; 1;
+   BEGIN_EXPRESSION
+   END_EXPRESSION
+	BEGIN_ATTRIBUTES
+	END_ATTRIBUTES
+   END_SUB_TECHNOLOGY;
+   DefaultControlPoint; 7452; 0;  CAPTION; Standard-Kontrollpunkt; SOURCE; 1; TECHCODETYPE; 1;
+   CoolantPressureValue; 7471; 0;  CAPTION; Druckwert; SOURCE; 1; TECHCODETYPE; 2;
+   BEGIN_EXPRESSION
+     171; IMTool(2,50,TechObj)
+     2521; IMTool(1,25,TechObj)
+     2522; IMTool(1.6,40,TechObj)
+   END_EXPRESSION
+	BEGIN_ATTRIBUTES
+	END_ATTRIBUTES
+END_OPERATION;
+</Annotation>
+			<Annotation name="Version">1.1</Annotation>
+			<InterchangeableComponent targetNodeName=":?" componentFile="&lt;Holders&gt;\_HSK 63\Rotierend\HYDRODEHN_DIA6x80_rewotec_19.02.2020_93.T5.036.009.gdml" newNodeName="5" clearTargetNode="0">
+				<Transformation>
+					<Translation trans="0 0 0"/>
+					<Rotation rotAxis="0 0 1" rotAngle="0" rotCenter="0 0 0"/>
+				</Transformation>
+			</InterchangeableComponent>
+			<InterchangeableComponent targetNodeName=":?:5:?:TA_TA01" componentFile="#cutter176" newNodeName="176" clearTargetNode="0">
+				<Transformation>
+					<Translation trans="0 0 -51"/>
+					<Rotation rotAxis="0 0 1" rotAngle="0" rotCenter="0 0 0"/>
+				</Transformation>
+			</InterchangeableComponent>
+		</MachineSetup>
+	</Content>
+</GDML>

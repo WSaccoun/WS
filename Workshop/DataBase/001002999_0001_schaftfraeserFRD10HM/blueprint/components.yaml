@@ -1,0 +1,47 @@
+Units:
+    Length: mm
+    Angle: Degree
+    Torque: Nm
+    rpm: 1/min
+    Pressure: Bar
+    Price: Euro
+Parts: 
+    Holder: 
+        Manufacturer: Rewotec
+        Type: Hydrodehnspannfutter
+        TechnicalData: 
+            HSK: HSK-A 63
+            d: 10,0
+            A: 85,0
+            D: 30,0
+            D1: 50,0
+            maxInsertionDepth: 42,0
+            maxAdjustementTrack: 10,0
+            l3: 46,0
+        ERP:
+            OrderNumber: 203670 10x85
+            Supplier: Rewotec
+            Price: 355,00
+            Designation: Hydrodehnspannfutter 10 mm, HSK-A 63, DIN 69893, G6,3 bei 15.000 1/min
+            Link: https://www.rewotec.at/Hydrodehnspannfutter-6-mm-HSK-A-63-DIN-69893-G63-bei-15000-1-min
+            PackagingMaxDiameter: 50
+            PackagingMaxLength: 125
+    Cutter: 
+        Manufacturer: Sandvik
+        Type: Schaftfräser
+        TechnicalData: 
+            CuttingDiameter: 10
+            CuttingLength: 22
+            OverallLength: 72
+            ShankLength: 50
+            ShankDiameter: 10
+            NumberOfFlutes: 4
+        ERP:
+            OrderNumber: 2P342-1000-PA 1730
+            Supplier: Sandvik
+            Price: 40,00
+            Designation: CoroMill Plura Vollhartmetall-Schaftfräser für die Heavy Duty Fräsbearbeitung
+            Link: https://www.sandvik.coromant.com/de-de/products/Pages/productdetails.aspx?c=2P342-1000-PA%20%20%20%20%20%20%201730
+            PackagingMaxDiameter: 10
+            PackagingMaxLength: 80
+    

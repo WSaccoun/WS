@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+                <style>
+                       	table {
+                          font-family: arial, sans-serif;
+                          border-collapse: collapse;
+                          width: 100%;
+                        }
+
+                        td, th {
+                          border: 1px solid #dddddd;
+                          text-align: left;
+                          padding: 8px;
+                        }
+
+
+                </style>
+	<h3>Central Tool DB</h3>
+   <p>Neuer Datensatz</p>
+   <p>Tool: <span id="group1" style="color:red"></span>/<span id="tool_type" style="color:red"></span>/<span id="insert_type" style="color:red"></span>.</p>
+   <div id="cont"></div>
+   <script type="text/javascript">
+   var params = '<%= $param_in%>';
+   params = JSON.parse(params);
+   var names = '<%= $names_in%>';
+   names = JSON.parse(names);
+   var group_name = '<%= $group_name%>';
+   var tool_type = '<%= $tool_type%>';
+   var insert_type = '<%= $insert_type%>';
+   document.getElementById('group1').innerHTML = group_name;
+   document.getElementById('tool_type').innerHTML = tool_type;
+   document.getElementById('insert_type').innerHTML = insert_type;
+   for (var a = 0; a<params.length; a++) {
+    ///params[a] != 1 && params[a] != 0 && params[a] != 2
+    if (typeof params[a] == "string"){
+         params.splice(a, 1);
+         a = a-1; 
+    }
+  }
+
+  console.log(params);
+  console.log(names);
+  create_list(params,names);
+  function create_list(params,names){
+  var nadiv = "";
+  var mydiv = "<form method=\"POST\" action=\"/save_ins\">";
+  mydiv += "<div id=\"table\"><table cellspacing=\"0\" cellpadding=\"0\">";
+  mydiv += "<thead><tr bgcolor=\"lightblue\"><th>Parameter</th><th>Value</th></tr></thead><tbody>";
+  for (var i = 0; i<params.length; i++) {
+      var name = "Insert[" + names[i] + "]";
+  		if (params[i] != 0){
+            mydiv += "<tr>";
+            if (names[i].includes("Shape")){
+      		mydiv += "<td>"+names[i]+": </td><td><input type=\"text\" value=\""+params[i] +"\" id=\""+i+"\" name=\""+ name +"\"/></td>";
+				} else{
+      		mydiv += "<td>"+names[i]+": </td><td><input type=\"text\" step=\"any\" id=\""+i+"\" name=\""+ name +"\"/></td>";}
+            mydiv += "</tr>";
+      } else {
+            nadiv += "<input type=\"hidden\" name=\""+ name +"\" value=\"NA\"/>";
+      }
+  }      
+  mydiv += "</tbody></table></div>";
+  mydiv +=nadiv;
+  mydiv += "<p><input type=\"submit\" value=\"Create\"></p></form>";
+  var elem = document.getElementById("cont");
+  elem.insertAdjacentHTML( 'beforeend', mydiv);
+  }
+
+   </script>
+</html>

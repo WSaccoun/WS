@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <div class="form_div">
+	<h3>Central Tool DB</h3>
+   <p>Define the components</p>
+   <p>Cutter: <select id="Cutter" onchange="singleSelectChangeText(id)"><option>Select cutter</option></select>
+   <p>Holder: <select id="Holder" onchange="singleSelectChangeText(id)"><option>Select holder</option></select>
+   <p>Shank: <select id="Shank" onchange="singleSelectChangeText(id)"><option>Select shank</option><option>empty</option></select>
+	<form method="POST" action="/insert_comp">
+        <input type="hidden" id="ERP" name="ERP" value="ERP"> 
+        <input type="hidden" id="sCutter" name="Cutter"> 
+        <input type="hidden" id="sHolder" name="Holder"> 
+        <input type="hidden" id="sShank" name="Shank"> 
+        <input type="submit" value="Next">
+   </form>
+   </div>	
+   <script type="text/javascript">
+   var groups = '<%= $list%>';
+   groups = JSON.parse(groups);
+   console.log(groups);
+  create_dropdown(groups);
+function create_dropdown(groups){
+  for (let key in groups) {
+  		var select = document.getElementById(key);
+  		arr = groups[key];
+  		for (var i = 0; i<arr.length; i++) {
+            var el = document.createElement("option");
+            el.textContent = arr[i];
+            el.value = arr[i];
+            select.appendChild(el);
+      } 
+	}
+}
+                            function singleSelectChangeText(id) {
+                                 var selObj = document.getElementById(id);
+                                 var selValue = selObj.options[selObj.selectedIndex].text;
+                                 document.getElementById("s"+id).value = selValue;
+                            }
+   </script>
+</html>

@@ -1,0 +1,28 @@
+convert .p12 to .pem with convert.rb
+curl in terminal for zoller:
+curl --cert ./cert.pem https://apps.pfi40.tuwien.ac.at/zoller/Tool -v
+
+save curl output to file : 
+curl --cert ./cert.pem https://apps.pfi40.tuwien.ac.at/zoller/Tool -v -o output.txt
+
+
+
+curl --cert ./cert.pem https://apps.pfi40.tuwien.ac.at/zoller/Tool/D1-KUFR-ALU/%7B12%7D -v -o D1-KUFR-ALU.txt
+
+gloomheaven
+
+Host myPi
+  Hostname 192.168.20.71
+  Port 22
+  IdentityFile   /home/nataliiak93/.ssh/myKey
+  User pi
+
+
+
+etc/ssh/sshd_config
+
+
+scp -r -P2223 eaton@192.168.20.133:/var/www/PHP /home/nataliiak93/Projects/
+on local computer !!!!!
+
+scp -r -P9927 pi@192.168.10.31:/home/pi/Projects/lift /home/nataliiak93/Projects/

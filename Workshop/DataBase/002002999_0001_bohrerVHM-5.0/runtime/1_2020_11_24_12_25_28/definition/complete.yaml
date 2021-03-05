@@ -1,0 +1,64 @@
+---
+Units:
+  Length: mm
+  Angle: Degree
+  Torque: Nm
+  Pressure: Bar
+Technical Data:
+  General:
+    Name: BOHRER VHM-5.0
+    ToolType: '2'
+    SpindleDirection: "-1"
+  Simulation:
+    SimulationColor: '65535'
+  Holder:
+    HolderHand: NA
+    HolderReliefAngle: NA
+    HolderClearanceAngle: NA
+    CuttingEdgeAngle: NA
+    CuttingEdgeAngleReference: NA
+    Wo: NA
+    OverallLength: '55'
+  Shank:
+    ShankDiameter: '25'
+    NeckDiameter: '5'
+    ShankAngle: '15'
+    ReachLength: '40'
+    ShankExtension: '0'
+  Cutter:
+    OverallLength: '51'
+    ToolDiameter: '5'
+    CuttingLength: '50'
+    FluteCount: '1'
+    ProfileRadius: NA
+    ToolAngle: '140'
+    Pitch: NA
+    ThreadPerUnit: NA
+    TipAngle: '140'
+    TipLength: '0.9099255856655061'
+    StepLength: NA
+    TipDiameter: NA
+    TopDiameter: NA
+    TopProfileRadius: NA
+    ThreadMillType: NA
+    ChamferShape: NA
+    MaximumPlungeAngle: NA
+  Insert:
+    InsertShape: NA
+    CornerRadius: NA
+    InsertAngle: NA
+    InsertICDiameter: NA
+    InsertLength: NA
+    InsertWidth: NA
+    InsertThickness: NA
+    InsertName: NA
+    InsertComment: NA
+    InsertClearanceAngle: NA
+    InsertHand: NA
+    ThreadHand: NA
+    ThreadType: NA
+    InsertBodyWidth: NA
+    InsertBodyLength: NA
+    InsertDimensionX: NA
+    InsertDimensionY: NA
+    NumberOfInserts: NA

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <div class="form_div">
+	<h3>Central Tool DB</h3>
+   <p id="act">Datensatz ansehen</p>
+   <p>Select: <select id="blue_print" onchange="singleSelectChangeText(id)"><option>---</option><option>blueprint</option></select>
+	<form method="POST" action="/select_runtime">
+        <input type="hidden" id="selected" name="selected"> 
+        <input type="submit" value="Next" name="act">
+   </form>
+   </div>	
+   <script type="text/javascript">
+   var groups = '<%= $runtimes%>';
+   var act = '<%= $act%>';   
+   document.getElementById('act').innerHTML = act; 
+   groups = JSON.parse(groups);
+   create_dropdown(groups)
+                           function create_dropdown(groups){
+                           var select = document.getElementById("blue_print");
+                           for (var i = 0; i<groups.length; i++) {
+                                   var el = document.createElement("option");
+                                   el.textContent = groups[i];
+                                   el.value = i;
+                                   select.appendChild(el);
+                            } }
+                            function singleSelectChangeText(id) {
+                                 var selObj = document.getElementById(id);
+                                 var selValue = selObj.options[selObj.selectedIndex].text;
+                                 document.getElementById('selected').value = selValue;
+                            }
+   </script>
+</html>

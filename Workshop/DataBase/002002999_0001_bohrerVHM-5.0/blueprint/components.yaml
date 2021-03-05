@@ -1,0 +1,46 @@
+Units:
+    Length: mm
+    Angle: Degree
+    Torque: Nm
+    rpm: 1/min
+    Pressure: Bar
+    Price: Euro
+Parts: 
+    Holder: 
+        Manufacturer: Rewotec
+        Type: Hydrodehnspannfutter
+        TechnicalData: 
+            HSK: HSK-A 63
+            d: 6,0
+            A: 80,0
+            D: 26,0
+            D1: 50,0
+            maxInsertionDepth: 37,0
+            maxAdjustementTrack: 10,0
+            l3: 47,0
+        ERP:
+            OrderNumber: 203670 6x80
+            Supplier: Rewotec
+            Price: 355,00
+            Designation: Hydrodehnspannfutter 6 mm, HSK-A 63, DIN 69893, G6,3 bei 15.000 1/min
+            Link: https://www.rewotec.at/Hydrodehnspannfutter-6-mm-HSK-A-63-DIN-69893-G63-bei-15000-1-min
+            PackagingMaxDiameter: 50
+            PackagingMaxLength: 120
+    Cutter: 
+        Manufacturer: Gühring
+        Type: Bohrer
+        TechnicalData: 
+            OverallLength: 90
+            Diameter: 5
+            CuttingLength: 50
+            ShankLength: 36
+            ShankDiameter: 6
+        ERP:
+            OrderNumber: 5499 5.000
+            Supplier: Gühring
+            Price: 35,00
+            Designation: Ratio Bohrer mit IK VHM / Ø 5,000 mm / m7 / ~9 x Ø / Werksnorm / nanoFIRE
+            Link: https://webshop.guehring.at/000009054990050000?p=3
+            PackagingMaxDiameter: 6
+            PackagingMaxLength: 100
+    

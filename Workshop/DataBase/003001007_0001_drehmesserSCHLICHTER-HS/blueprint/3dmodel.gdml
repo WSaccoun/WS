@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GDML version="2.0">
+	<Content>
+		<GdmlInfo>
+			<DocumentInfo>
+				<KeyNode>MachineSetup</KeyNode>
+				<Application version="2020.13.206.4475">SimNCControllerApiGfx</Application>
+				<Created>2020-11-10T12:52:22+01:00</Created>
+				<CreatedBy name="Patrick@LAPTOP-CDP-PSC"/>
+				<Modified>2020-11-10T12:52:22+01:00</Modified>
+				<ModifiedBy name="Patrick@LAPTOP-CDP-PSC"/>
+			</DocumentInfo>
+		</GdmlInfo>
+		<MachineSetup name="unnamed Setup">
+			<Annotation name="#cutter26">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;GDML version="2.0"&gt;
+	&lt;Content&gt;
+		&lt;GdmlInfo id="MachineComponent"/&gt;
+		&lt;MachineComponent&gt;
+			&lt;Tool nodeName="SCHLICHTER-HS"&gt;
+				&lt;CutterShape&gt;
+					&lt;Material color="255 128 255" specularIntensity="128 128 128"/&gt;
+					&lt;Solid&gt;
+						&lt;TaperSweep clearanceAngle="0" thickness="0.0038429439193539139" accuracy="0.00096073597983847847"&gt;
+							&lt;Contour startPoint="0.00013704652454261945 0.10523359562429438"&gt;
+								&lt;Arc endPoint="0.17880107536067222 0.038433852467434186" arcDirection="CCW" arcCenter="0.10000000000000002 0.10000000000000001"/&gt;
+								&lt;Line endPoint="6.7558146452503607 8.4566273360680686"/&gt;
+								&lt;Line endPoint="7.3315101821843696 19.441552566820999"/&gt;
+								&lt;Line endPoint="0.55923373877886939 10.773434002185821"/&gt;
+								&lt;Line endPoint="0.00013704652454261945 0.10523359562429438"/&gt;
+							&lt;/Contour&gt;
+						&lt;/TaperSweep&gt;
+					&lt;/Solid&gt;
+					&lt;RenderSolid&gt;
+						&lt;TaperSweep clearanceAngle="0" thickness="4" accuracy="0.00096073597983847847"&gt;
+							&lt;Contour startPoint="0.00013704652454261945 0.10523359562429438"&gt;
+								&lt;Arc endPoint="0.17880107536067222 0.038433852467434186" arcDirection="CCW" arcCenter="0.10000000000000002 0.10000000000000001"/&gt;
+								&lt;Line endPoint="6.7558146452503607 8.4566273360680686"/&gt;
+								&lt;Line endPoint="7.3315101821843696 19.441552566820999"/&gt;
+								&lt;Line endPoint="0.55923373877886939 10.773434002185821"/&gt;
+								&lt;Line endPoint="0.00013704652454261945 0.10523359562429438"/&gt;
+							&lt;/Contour&gt;
+						&lt;/TaperSweep&gt;
+					&lt;/RenderSolid&gt;
+				&lt;/CutterShape&gt;
+				&lt;Shape nodeName="Holder"&gt;
+					&lt;Material color="160 160 160"/&gt;
+					&lt;Solid&gt;
+						&lt;FaceMesh accuracy="0.10000000000000001" overrideMaterial="0"&gt;
+							&lt;Binary&gt;QlNfRmFjZU1lc2gAMi4wACUAAADkBwAADQAAAM4AAAB7EQAAAQQAAAABAQEBpAIAAJWUTUwTQRTH
+X+tuaWktSzF+IEVFrEaMGqspFeJOCIeKxINADyYmpkRU8AAY9WDUhAsxqV7wo3DUGyFBwwksNNr6
+UW0xaoKJUaJBMZVgiTYa0bBmtm/Z7XYb8SWT2Xnvt//5z+7MRJg3DwK9w7zUewaDfd9et47d3FYZ
+j1kIcZgPOp1hH7kemgAAN9EDgBHksACATmqCINQCgAkZAwDkYctH1oz1IgBgMUdrywBAjzXKMKhp
+xBytFQLActQ14rgAAGwKP/TZCgAcMjpkClHTjHOy6MuAmhw2K3rJx3oRjq2obUM9HXrSoy6LrA3n
+AtSj2msgO3Sq9q9Q81ptBQC0rbp3/FyDneT9iN4wdTgJOiG/dl253X70Ox+PxWKx+j1Emq5FjBKi
+zotjCyEzIxfet3fXZvFOGmFfFq/O9/XSGOalPp11k+bxP76F5BbStvD85PjbHUTKa/t0E22fbqLt
+U+Yz/ci8Oq/2qcPvVlcR2V1fsJaUs4c6kzUbFtdVd+3LU3/jJ95efOar9+UmOY/8xgyeI/uRL8ng
+OaL9v+TvObi557DhVNNinu632QNnxyKpZChBqsp2xvt5qUbu75vvciV4dsD7uWloKiTluZx7a45n
+8EkQBIH2dzonsyglz+J+1+bnePUbLJ7fHHxIzTN41rT57HkYPHNq3j5tm32YSoas0aTn8bN+3mIf
+1b3zeqopv1KhJPGvmlMNPleCr4yO3r00NBX63XXRb1p/K0j5YpxHyZei/s8naf103yrqlyruSDXP
+oZ/wsXXTgUcOUb8M76Slrtehsd4X6H8v+g98mK85UX1Z9LNVsQfUvBv58yOrr/onWoL0f23HuyS3
+H/n/UX3n0vePyLv+g6d+qjR45uNkxcyRjuBA4+nyHnd3UKlPtPQB4C9OKavO/////w==&lt;/Binary&gt;
+						&lt;/FaceMesh&gt;
+					&lt;/Solid&gt;
+				&lt;/Shape&gt;
+				&lt;Transformation&gt;
+					&lt;Translation trans="32.099999999999994 0 -150.09999999999999"/&gt;
+					&lt;Rotation rotAxis="-4.3297802811774664e-17 0.70710678118654757 0.70710678118654746" rotAngle="180"/&gt;
+				&lt;/Transformation&gt;
+				&lt;ToolData toolType="TURNTOOL" technologyType="TURNING THREADING"/&gt;
+			&lt;/Tool&gt;
+		&lt;/MachineComponent&gt;
+	&lt;/Content&gt;
+&lt;/GDML&gt;</Annotation>
+			<Annotation name="AssemblyType">Tool</Annotation>
+			<Annotation name="ToolAssembly_25_Name">Klemmaufnahme 25x25_radial_2fach_sauter_145864</Annotation>
+			<Annotation name="ToolAssembly_25_Reference"></Annotation>
+			<Annotation name="ToolAssembly_25_StationID">0</Annotation>
+			<Annotation name="ToolAssembly_25_TurretID">1</Annotation>
+			<Annotation name="Tool_26_Name">SCHLICHTER-HS</Annotation>
+			<Annotation name="Tool_26_Technology">BEGIN_PROCESS; Prozessname; 5;
+BEGIN_OPERATION; 137; SCHLICHTER-HS; 0;
+   BEGIN_VERSION;
+      MAJOR_VERSION; 1;
+      MINOR_VERSION; 0;
+   END_VERSION;
+   Comment; 7; ;  CAPTION; Kommentar; SOURCE; 1; TECHCODETYPE; 3;
+	BEGIN_STRING; 7;;
+		:
+	END_STRING
+   ToolNumber; 101; 1;  CAPTION; Werkzeugnummer; SOURCE; 1; TECHCODETYPE; 1;
+   InsertLength; 105; 3;  CAPTION; E; SOURCE; 1; TECHCODETYPE; 2;
+   InsertWidth; 106; 1.22;  CAPTION; Plattenbreite (W); SOURCE; 1; TECHCODETYPE; 2;
+   ToolAngle; 108; 90;  CAPTION; Eckenwinkel (NA); SOURCE; 1; TECHCODETYPE; 2;
+   ToolStyle; 110; 16;  CAPTION; Werkzeugtyp; SOURCE; 1; TECHCODETYPE; 376;
+   ReliefAngle; 115; 52;  CAPTION; Einstellwinkel NS (RA); SOURCE; 1; TECHCODETYPE; 2;
+   LengthCompRegister; 121; 1;  CAPTION; Längenkorr.-Register; SOURCE; 1; TECHCODETYPE; 1;
+   ToolShiftZ; 127; 0;  CAPTION; Werkzeugversatz Z|Werkzeugversatz X, Y, Z; SOURCE; 1; TECHCODETYPE; 2;
+   SpindleDirection; 195; -1;  CAPTION; Spindeldrehrichtung; SOURCE; 1; TECHCODETYPE; 6;
+   Coolant; 214; 0;  CAPTION; Kühlung; SOURCE; 1; TECHCODETYPE; 50;
+   ControlEdge; 266; 1;  CAPTION; Kontrollecke; SOURCE; 1; TECHCODETYPE; 54;
+   InsertType; 383; 1;  CAPTION; Plattentyp; SOURCE; 1; TECHCODETYPE; 317;
+   LatheToolOrientation; 402; 13;  CAPTION; Orientierung; SOURCE; 1; TECHCODETYPE; 72;
+   ToolNoseCompensation; 412; 1;  CAPTION; Bahnkorrektur; SOURCE; 1; TECHCODETYPE; 160;
+   ToolDiameter; 413; 6.3093409999999999;  CAPTION; Eingeschr.Kreis; SOURCE; 1; TECHCODETYPE; 2;
+   ToolAngle; 414; 35;  CAPTION; Eckenwinkel (NA); SOURCE; 1; TECHCODETYPE; 2;
+   ToolMaterial; 420; ;  CAPTION; Werkzeugbeschichtung; SOURCE; 1; TECHCODETYPE; 3;
+	BEGIN_STRING; 420;;
+		:{d1ced2a0-3492-4fa2-a393-b52c45d313b6}
+	END_STRING
+   ToolNoseRadius; 437; 0.10000000000000001;  CAPTION; Eckenradius (NR); SOURCE; 1; TECHCODETYPE; 2;
+   ToolID; 498; ;  CAPTION; Werkzeug ID; SOURCE; 2; TECHCODETYPE; 3;
+	BEGIN_STRING; 498;;
+		:drehmesserSCHLICHTER-HS
+	END_STRING
+   ToolShiftX; 526; 12.5;  CAPTION; Werkzeugversatz X|Werkzeugversatz X, Y, Z; SOURCE; 2; TECHCODETYPE; 2;
+   EdgeShiftRegister; 700; 0;  CAPTION; Kontrolleckenregister; SOURCE; 1; TECHCODETYPE; 1;
+   InsertID; 811; ;  CAPTION; Platten ID-Nr.; SOURCE; 1; TECHCODETYPE; 3;
+	BEGIN_STRING; 811;;
+		:
+	END_STRING
+   ToolUnit; 813; 71;  CAPTION; Einheit; SOURCE; 1; TECHCODETYPE; 12;
+   InsertShape; 814; 7;  CAPTION; Kontur; SOURCE; 1; TECHCODETYPE; 320;
+   InsertThickness; 815; 4;  CAPTION; Dicke; SOURCE; 2; TECHCODETYPE; 2;
+   SideReliefAngle; 816; 2;  CAPTION; Freiwinkel; SOURCE; 1; TECHCODETYPE; 384;
+   InsertTolerance; 817; 0;  CAPTION; Toleranz; SOURCE; 1; TECHCODETYPE; 383;
+   InsertCrossSectionType; 818; 0;  CAPTION; Typ; SOURCE; 1; TECHCODETYPE; 382;
+   HolderLeadAngle; 819; -3;  CAPTION; Einstellwinkel HS (LA); SOURCE; 1; TECHCODETYPE; 2;
+   HolderID; 820; ;  CAPTION; Halter-ID-Nr.; SOURCE; 1; TECHCODETYPE; 3;
+	BEGIN_STRING; 820;;
+		:Standard
+	END_STRING
+   HolderType; 822; 1;  CAPTION; Haltertyp; SOURCE; 1; TECHCODETYPE; 318;
+   HolderStyle; 823; 4;  CAPTION; Art; SOURCE; 1; TECHCODETYPE; 381;
+   HolderClampStyle; 824; 0;  CAPTION; Klemmung; SOURCE; 1; TECHCODETYPE; 378;
+   HolderClearanceAngle; 825; 2;  CAPTION; Freiwinkel; SOURCE; 1; TECHCODETYPE; 379;
+   HolderHand; 826; 1;  CAPTION; Ausführung; SOURCE; 1; TECHCODETYPE; 380;
+   HolderDimensionA; 827; 25;  CAPTION; A; SOURCE; 1; TECHCODETYPE; 2;
+   HolderDimensionB; 828; 25;  CAPTION; B; SOURCE; 1; TECHCODETYPE; 2;
+   HolderDimensionC; 829; 150;  CAPTION; C; SOURCE; 2; TECHCODETYPE; 2;
+   HolderDimensionD; 830; 14;  LOCKED; CAPTION; D; SOURCE; 1; TECHCODETYPE; 2;
+   HolderDimensionE; 831; 21.199999999999999;  CAPTION; E; SOURCE; 1; TECHCODETYPE; 2;
+   HolderDimensionF; 832; 32;  CAPTION; F; SOURCE; 1; TECHCODETYPE; 2;
+   HolderShankDiameter; 834; 0.3125;  CAPTION; Werkzeugdurchmesser; SOURCE; 1; TECHCODETYPE; 2;
+   HolderBoringBarType; 835; 0;  CAPTION; Halterausführung; SOURCE; 1; TECHCODETYPE; 377;
+   InsertSize; 836; 1.22;  CAPTION; Stahlbreite (S); SOURCE; 1; TECHCODETYPE; 2;
+   InsertHand; 837; 1;  CAPTION; Ausführung; SOURCE; 1; TECHCODETYPE; 385;
+   InsertEdgeLength; 840; 11;  CAPTION; Schneidenlänge; SOURCE; 1; TECHCODETYPE; 2;
+   ToolShiftY; 860; 0;  CAPTION; Werkzeugversatz Y|Werkzeugversatz X, Y, Z; SOURCE; 2; TECHCODETYPE; 2;
+   HolderComment; 871; ;  CAPTION; Halter Kommentar; SOURCE; 1; TECHCODETYPE; 3;
+	BEGIN_STRING; 871;;
+		:
+	END_STRING
+   InsertComment; 872; ;  CAPTION; Einfügen eines Kommentars; SOURCE; 1; TECHCODETYPE; 3;
+	BEGIN_STRING; 872;;
+		:
+	END_STRING
+   SimulationColor; 1356; 16744703;  CAPTION; Simulationsfarbe; SOURCE; 1; TECHCODETYPE; 1;
+   CustomSetting1; 1751; 0;  CAPTION; Custom Setting 1; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting2; 1752; 0;  CAPTION; Custom Setting 2; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting3; 1753; 0;  CAPTION; Custom Setting 3; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting4; 1754; 0;  CAPTION; Custom Setting 4; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting5; 1755; 0;  CAPTION; Custom Setting 5; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting6; 1756; 0;  CAPTION; Custom Setting 6; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting7; 1757; 0;  CAPTION; Custom Setting 7; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting8; 1758; 0;  CAPTION; Custom Setting 8; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting9; 1759; 0;  CAPTION; Custom Setting 9; SOURCE; 1; TECHCODETYPE; 2;
+   CustomSetting10; 1760; 0;  CAPTION; Kuehlmitteldruck; SOURCE; 1; TECHCODETYPE; 2;
+   LatheToolOrientationAngle; 2501; 0;  HIDDEN; CAPTION; Winkelorientierung; SOURCE; 1; TECHCODETYPE; 2;
+   TouchOffAngle; 2504; 0;  CAPTION; Einstellwinkel B-Achse; SOURCE; 1; TECHCODETYPE; 2;
+   ShankAxB; 6709; 1;  CAPTION; Schaftdicke AxB; SOURCE; 1; TECHCODETYPE; 527;
+   LatheToolDiameter; 6710; 1;  HIDDEN; CAPTION; Werkzeugdurchmesser; SOURCE; 1; TECHCODETYPE; 528;
+   CoolantPressure; 6775; 1;  CAPTION; Kühlungsdruck; SOURCE; 1; TECHCODETYPE; 616;
+   ToolRotationX; 6783; 0;  CAPTION; Werkzeugrotation X|Werkzeugrotation X, Y, Z; SOURCE; 1; TECHCODETYPE; 2;
+   ToolRotationY; 6784; 0;  CAPTION; Werkzeugrotation Y|Werkzeugrotation X, Y, Z; SOURCE; 1; TECHCODETYPE; 2;
+   ToolRotationZ; 6785; 0;  CAPTION; Werkzeugrotation Z|Werkzeugrotation X, Y, Z; SOURCE; 2; TECHCODETYPE; 2;
+   NewCoolant; 7254; 1;  CAPTION; Kühlung; SOURCE; 1; TECHCODETYPE; 1;
+   CoolantPressureValue; 7471; 0;  CAPTION; Druckwert; SOURCE; 0; TECHCODETYPE; 2;
+   BEGIN_EXPRESSION
+   END_EXPRESSION
+	BEGIN_ATTRIBUTES
+		KBM_ToolGuid; KBM_ToolGuid; 0; String; {35775d82-b394-46f2-b093-e37aadbff4f4}; (null);
+		CHECKitB4; CHECKitB4; 80; Properties; ; ;
+	BEGIN_ATTRIBUTES
+		Tool; Tool; 80; Properties; ; ;
+	BEGIN_ATTRIBUTES
+		Key; Key; 0; String; {F5E8EF5E-6C6E-4F5F-A1B6-54C67B39EE6E}; (null);
+	END_ATTRIBUTES
+		ToolAssembly; ToolAssembly; 80; Properties; ; ;
+	BEGIN_ATTRIBUTES
+		Key; Key; 0; String; {68EA8290-EF7C-4AB2-9672-FA8698FD3C06}; (null);
+	END_ATTRIBUTES
+	END_ATTRIBUTES
+	END_ATTRIBUTES
+END_OPERATION;
+</Annotation>
+			<Annotation name="Version">1.1</Annotation>
+			<InterchangeableComponent targetNodeName=":?" componentFile="&lt;Holders&gt;\_BMT 55\Starr\Klemmaufnahme 25x25_radial_2fach_sauter_145864.gdml" newNodeName="25" clearTargetNode="0">
+				<Transformation>
+					<Translation trans="0 0 0"/>
+					<Rotation rotAxis="0 0 1" rotAngle="0" rotCenter="0 0 0"/>
+				</Transformation>
+			</InterchangeableComponent>
+			<InterchangeableComponent targetNodeName=":?:25:?:TA_TA01" componentFile="#cutter26" newNodeName="26" clearTargetNode="0">
+				<Transformation>
+					<Translation trans="32.099999999999987 0 -150.09999999999999"/>
+					<Rotation rotAxis="-4.3297802811774664e-17 0.70710678118654757 0.70710678118654746" rotAngle="180" rotCenter="0 0 0"/>
+				</Transformation>
+			</InterchangeableComponent>
+		</MachineSetup>
+	</Content>
+</GDML>

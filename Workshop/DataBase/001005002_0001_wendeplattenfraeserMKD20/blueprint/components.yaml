@@ -1,0 +1,62 @@
+Units:
+    Length: mm
+    Angle: Degree
+    Torque: Nm
+    rpm: 1/min
+    Pressure: Bar
+    Price: Euro
+Parts: 
+    Holder: 
+        Manufacturer: Rewotec
+        Type: Hydrodehnspannfutter
+        TechnicalData: 
+            HSK: HSK-A 63
+            d: 20,0
+            A: 100,0
+            D: 42,0
+            D1: 50,0
+            maxInsertionDepth: 52,0
+            maxAdjustementTrack: 10,0
+            l3: 42,0
+        ERP:
+            OrderNumber: 203670 20x100
+            Supplier: Rewotec
+            Price: 355,00
+            Designation: Hydrodehnspannfutter 20 mm, HSK-A 63, DIN 69893, G6,3 bei 15.000 1/min
+            Link: https://www.rewotec.at/Hydrodehnspannfutter-20-mm-HSK-A-63-DIN-69893-G63-bei-15000-1-min
+            PackagingMaxDiameter: 50
+            PackagingMaxLength: 140
+    Shank: 
+        Manufacturer: Sandvik
+        Type: Eckfräser
+        TechnicalData: 
+            CutterDiamter: 20
+            NumberOfCutters: 5
+            UseLength: 120
+            HolderDiameter: 20
+            OverallLength: 173
+        ERP:
+            OrderNumber: R390-020A20D-07H
+            Supplier: Sandvik
+            Price: 
+            Designation: Schwingungsgedämpfter CoroMill 390 Eckfräser
+            Link: https://www.sandvik.coromant.com/de-de/products/Pages/productdetails.aspx?c=R390-020A20D-07H
+            PackagingMaxDiameter: 20
+            PackagingMaxLength: 180
+    Cutter:
+        Manufacturer: Sandvik
+        Type: Wendeschneidplatte
+        TechnicalData: 
+            Shape: Diamond
+            ISO-Designation: 
+            CuttingEdgeLength: 5.9
+            CuttingEdgeHeight: 2.4
+            CornerRadius: 0.8
+        ERP:
+            OrderNumber: 390R-070208E-NL H13A
+            Supplier: Sandvik
+            Price: 
+            Designation: CoroMill 390 Wendeplatte zum Fräsen
+            Link: https://www.sandvik.coromant.com/de-de/products/Pages/productdetails.aspx?c=390R-070208E-NL%20%20%20%20%20H13A
+            PackagingMaxDiameter: 6
+            PackagingMaxLength: 6

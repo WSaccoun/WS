@@ -1,0 +1,60 @@
+---
+Units:
+  Length: mm
+  Angle: Degree
+  Torque: Nm
+  Pressure: Bar
+Technical Data:
+  General:
+    Name: MK D20
+    ToolType: '8'
+    SpindleDirection: "-1"
+  Simulation:
+    SimulationColor: '5949152'
+  Holder:
+    HolderHand: NA
+    HolderReliefAngle: NA
+    HolderClearanceAngle: NA
+    CuttingEdgeAngle: NA
+    CuttingEdgeAngleReference: NA
+    Wo: NA
+    OverallLength: '120'
+  Shank:
+    ShankDiameter: '20'
+    NeckDiameter: '19'
+    ShankAngle: '75'
+    ReachLength: '118'
+    ShankExtension: '2'
+  Cutter:
+    OverallLength: '120'
+    ToolDiameter: '20'
+    CuttingLength: '5.9'
+    FluteCount: NA
+    ProfileRadius: '0.03'
+    ToolAngle: '0.03'
+    ThreadAngle: NA
+    Pitch: NA
+    ThreadPerUnit: NA
+    TipAngle: NA
+    TipLength: NA
+    StepLength: '7'
+    TipDiameter: NA
+    TopDiameter: NA
+    TopProfileRadius: NA
+    ThreadMillType: NA
+    ChamferShape: NA
+  Insert:
+    InsertShape: '2'
+    CornerRadius: '0.5'
+    InsertAngle: '1'
+    InsertICDiameter: NA
+    InsertLength: '1'
+    InsertWidth: '1'
+    InsertHand: NA
+    ThreadHand: NA
+    ThreadType: NA
+    InsertBodyWidth: NA
+    InsertBodyLength: NA
+    InsertDimensionX: NA
+    InsertDimensionY: NA
+    NumberOfInserts: '5'

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+                <style>
+                       	table {
+                          font-family: arial, sans-serif;
+                          border-collapse: collapse;
+                          width: 100%;
+                        }
+
+                        td, th {
+                          border: 1px solid #dddddd;
+                          text-align: left;
+                          padding: 8px;
+                        }
+
+
+                </style>
+	<h3>Central Tool DB</h3>
+   <p>Neuer Datensatz</p>
+   <p>Tool: <span id="group1" style="color:red"></span>.</p>
+   <div id="cont"></div>
+   <script type="text/javascript">
+   var values = '<%= $cont%>';
+   values = JSON.parse(values);
+   console.log(values);
+   var group_name = '<%= $bluename%>';
+   document.getElementById('group1').innerHTML = group_name;
+
+create_content(values);
+function create_content(cont){
+      var mydiv = "<form method=\"POST\" action=\"/save_bp\">";
+  		mydiv += "<div id=\"table\"><table cellspacing=\"0\" cellpadding=\"0\">";
+  		mydiv += "<thead><tr bgcolor=\"lightblue\"><th>Tool Part</th><th>Parameter</th><th>Value</th></tr></thead><tbody>";
+	 var i = 0;
+const iterate = (obj,key,i) => {
+    oldkey = key;
+    Object.keys(obj).forEach(key => {
+    if (typeof obj[key] === 'object') {
+            if (obj[key] !== null){
+            mydiv += "<tr bgcolor=\"lightgrey\">";
+            mydiv += "<td><b>"+ key + "</b></td><td></td><td></td>";
+            i = i + 1;
+            iterate(obj[key],key,i);
+            i = i-1;}
+        } else {
+            if (oldkey == "Units"){
+				mydiv += "<tr>";
+            mydiv += "<td> *** </td>";
+      		mydiv += "<td>"+key+": </td><td><input type=\"text\"  name=\""+oldkey+"["+ key+"]\" value=\""+ obj[key] +"\"/></td>";
+            mydiv += "</tr>";
+            }else {
+               if (obj[key] == "NA"){
+						mydiv += "<input type=\"hidden\" name=\"Technical Data["+oldkey+"["+ key+"]]\" value=\""+ obj[key] +"\"/>"
+        			} else {
+                  				mydiv += "<tr>";
+            mydiv += "<td> *** </td>";
+      		mydiv += "<td>"+key+": </td><td><input type=\"text\"  name=\"Technical Data["+oldkey+"["+ key+"]]\" value=\""+ obj[key] +"\"/></td>";
+            mydiv += "</tr>";
+					}
+				}
+   }
+        
+    })
+return mydiv;
+}
+var test = iterate(cont,i);
+  test += "</tbody></table></div>";
+  test += "<p><input type=\"submit\" value=\"Create\"></p></form>";
+console.log(test);
+var elem = document.getElementById("cont");
+elem.insertAdjacentHTML( 'beforeend',test );
+}
+   </script>
+</html>

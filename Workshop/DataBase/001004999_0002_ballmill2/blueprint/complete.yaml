@@ -1,0 +1,77 @@
+---
+Units:
+  Length: mm
+  Angle: Degree
+  Torque: Nm
+  Pressure: Bar
+Technical Data:
+  General:
+    Name: ballmill2
+    ToolType: BallEndMill
+    SpindleDirection: '89'
+    Comment: '9'
+  Simulation:
+    SimulationColor: '8'
+  Holder:
+    OverallLength: '135'
+    HolderHand: NA
+    HolderReliefAngle: NA
+    HolderClearanceAngle: NA
+    CuttingEdgeAngle: NA
+    CuttingEdgeAngleReference: NA
+    Wo: NA
+  Shank:
+    ShankDiameter: '44'
+    NeckDiameter: '4'
+    ShankAngle: '8'
+    ReachLength: '98'
+    ShankExtension: '9'
+  Cutter:
+    OverallLength: '8'
+    ToolDiameter: '8'
+    CuttingLength: '43'
+    FluteCount: '9'
+    MaximumPlungeAngle: '8'
+    ProfileRadius: NA
+    ToolAngle: NA
+    ThreadAngle: NA
+    Pitch: NA
+    ThreadPerUnit: NA
+    TipAngle: NA
+    TipLength: NA
+    StepLength: NA
+    TipDiameter: NA
+    TopDiameter: NA
+    TopProfileRadius: NA
+    ThreadMillType: NA
+    ChamferShape: NA
+  Mounting:
+    MagazineNumber: '9'
+    MagazineLocationNumber: '8'
+  NC properties:
+    Number: '9'
+    NcName  (optional to CiB4Tool.Name): '8'
+    ToolOffsetRegister: '98'
+    EdgeShiftRegister: '7'
+  Tooloffsets properties:
+    CuttingEdgePosition (1-9) enum??: '87'
+    ControlEdge (necessary??): '8'
+    OffsetConfigurationNumber: '7'
+  Insert:
+    InsertShape: NA
+    CornerRadius (also used for non insert tools): NA
+    InsertAngle: NA
+    InsertICDiameter: NA
+    InsertLength: NA
+    InsertWidth: NA
+    InsertThickness: NA
+    InsertName: NA
+    InsertComment: NA
+    InsertClearanceAngle: NA
+    InsertHand: NA
+    ThreadHand: NA
+    ThreadType: NA
+    InsertBodyWidth: NA
+    InsertBodyLength: NA
+    InsertDimensionX: NA
+    InsertDimensionY: NA

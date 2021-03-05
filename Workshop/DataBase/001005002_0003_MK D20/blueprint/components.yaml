@@ -1,0 +1,43 @@
+---
+Units:
+  Length: mm
+  Angle: Degree
+  Torque: Nm
+  Pressure: Bar
+  rmp: 1/min
+  Price: Euro
+Parts:
+  Cutter:
+    Manufacturer: ''
+    Type: ''
+    Technical Data:
+      CuttingDiameter: ''
+      CuttingLength: ''
+      OverallLength: ''
+      ShankLength: ''
+      ShankDiameter: ''
+      NumberOfFlutes: ''
+    ERP:
+      OrderNumber: ''
+      Supplier: ''
+      Price: ''
+      Designation: ''
+      Link: ''
+      PackagingMaxDiameter: ''
+      PackagingMaxLength: ''
+  Holder:
+    Manufacturer: ''
+    Type: ''
+    Technical Data:
+      NominalHeigth: ''
+      Design: ''
+      Mandreltype/ToolHolderType: ''
+      ToolHolder/Size: ''
+    ERP:
+      OrderNumber: ''
+      Supplier: ''
+      Price: ''
+      Designation: ''
+      Link: ''
+      PackagingMaxDiameter: ''
+      PackagingMaxLength: ''

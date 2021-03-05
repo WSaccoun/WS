@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+                <style>
+                       	table {
+                          font-family: arial, sans-serif;
+                          border-collapse: collapse;
+                          width: 100%;
+                        }
+
+                        td, th {
+                          border: 1px solid #dddddd;
+                          text-align: left;
+                          padding: 8px;
+                        }
+
+
+                </style>
+	<h3>Central Tool DB</h3>
+   <p>Neuer Datensatz</p>
+   <p>Tool: <span id="group1" style="color:red"></span>/<span id="tool_type" style="color:red"></span>/<span id="insert_type" style="color:red"></span>.</p>
+   <div id="cont"></div>
+   <script type="text/javascript">
+   var params = '<%= $comp_param%>';
+   params = JSON.parse(params);
+   var insert = '<%= $insert_type%>';
+   var group_name = '<%= $group_name%>';
+   var tool_type = '<%= $tool_type%>';
+   document.getElementById('group1').innerHTML = group_name;
+   document.getElementById('tool_type').innerHTML = tool_type;
+   document.getElementById('insert_type').innerHTML = insert_type;
+
+  create_list(params);
+  function create_list(params){
+  var mydiv = "<form method=\"POST\" action=\"/save_comp\">"; 
+  mydiv += "<div id=\"table\"><table cellspacing=\"0\" cellpadding=\"0\">";
+  mydiv += "<thead><tr bgcolor=\"lightblue\"><th>Parts</th><th>Parameter</th><th>Value</th></tr></thead><tbody>";
+  mydiv += add_units();
+  for (let key in params) {
+         if (key != "ERP"){
+         console.log(key);
+         var list = params[key];
+         mydiv += "<tr bgcolor=\"lightgrey\">";
+         mydiv += "<td><b>"+ key + "</b></td><td></td><td></td></tr>";
+         mydiv += "<tr bgcolor=\"lightyellow\"><td> *** </td><td>Manufacturer: </td><td><input type=\"text\" name=\"Parts["+key+"[Manufacturer]]\"/></td></tr>";
+         mydiv += "<tr bgcolor=\"lightyellow\"><td> *** </td><td>Type: </td><td><input type=\"text\" name=\"Parts["+key+"[Type]]\"/></td></tr>";
+  for (var i = 1; i<list.length; i++) {
+      var name = "Parts["+ key + "[Technical Data[" + list[i] + "]]]";
+       console.log(name);
+            mydiv += "<tr>";
+            mydiv += "<td> *** </td>";
+      		mydiv += "<td>"+list[i]+": </td><td><input type=\"text\" id=\""+i+"\" name=\""+ name +"\"/></td>";
+            mydiv += "</tr>";
+      }      
+   console.log(params['ERP']);
+     for (var k = 1; k<params['ERP'].length; k++) {
+            var name = "Parts["+ key + "[ERP[" + params['ERP'][k] + "]]]";  
+            console.log(name);          
+            mydiv += "<tr bgcolor=\"lightyellow\">";
+            mydiv += "<td> *** </td>";
+      		mydiv += "<td>"+params['ERP'][k]+": </td><td><input type=\"text\" name=\""+ name +"\"/></td>";
+            mydiv += "</tr>"; 
+     }
+}}
+  mydiv += "</tbody></table></div>";
+  mydiv += "<p><input type=\"submit\" value=\"Create\"></p></form>";
+  var elem = document.getElementById("cont");
+  elem.insertAdjacentHTML( 'beforeend', mydiv);
+  }
+
+  function add_units(){
+  var mydiv = "";
+  var units = ["Length","Angle","Torque","Pressure","rmp","Price"];
+  var def = ["mm","Degree","Nm","Bar","1/min","Euro"];
+  mydiv += "<tr bgcolor=\"lightgrey\">";
+  mydiv += "<td><b>Units</b></td><td></td><td></td>";
+  for (var e = 0; e < units.length; e++){
+  mydiv += "<tr><td> *** </td>";
+  mydiv += "<td>"+ units[e]+": </td><td><input type=\"text\" name=\"Units["+ units[e]+"]\" value=\""+ def[e] +"\"/></td>";
+  mydiv += "</tr>";}  
+  return mydiv;
+  }
+   </script>
+</html>

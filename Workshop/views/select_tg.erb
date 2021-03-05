@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <div class="form_div">
+	<h3>Central Tool DB</h3>
+   <p>Neuer Datensatz</p>
+   <p>Select tool group: <select id="tool_group" onchange="singleSelectChangeText(id)"><option>Select tool group</option></select>
+	<form method="POST" action="/select_tg">
+        <input type="hidden" id="selected" name="selected"> 
+        <input type="submit" value="Next" name="act">
+   </form>
+   </div>	
+   <script type="text/javascript">
+   var groups = '<%= $groups%>';
+   groups = JSON.parse(groups);
+   create_dropdown(groups);
+                           function create_dropdown(groups){
+                           var select = document.getElementById("tool_group");
+                           for (var i = 0; i<groups.length; i++) {
+                                   var el = document.createElement("option");
+                                   el.textContent = groups[i];
+                                   el.value = groups[i];
+                                   select.appendChild(el);
+                            } }
+                            function singleSelectChangeText(id) {
+                                 var selObj = document.getElementById(id);
+                                 var selValue = selObj.options[selObj.selectedIndex].text;
+                                 document.getElementById('selected').value = selValue;
+                            }
+   </script>
+</html>

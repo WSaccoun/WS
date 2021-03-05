@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+[draggable=true] {
+  cursor: move;
+}
+#parent{
+  display: flex;
+  border: 1px solid #000;
+  height: 100vh;
+}
+
+.resizable {
+  overflow: scroll;
+  resize: both;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid black;
+  min-width: 50px;
+  min-height: 50px;
+  background-color: skyblue;
+}
+</style>
+<div id="parent">
+
+  <div id="LeftCol" class="resizable">LeftCol</div>
+  <div id="RightCol">RightCol</div>
+</div>
+<script>
+/*#LeftCol{
+  flex-grow: 3;
+  border: 1px solid red;
+}
+#RightCol{
+  flex-grow: 1;
+  border: 1px solid red;
+}*/
+</script>
+</html>

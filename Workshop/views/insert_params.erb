@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+                <style>
+                       	table {
+                          font-family: arial, sans-serif;
+                          border-collapse: collapse;
+                          width: 100%;
+                        }
+
+                        td, th {
+                          border: 1px solid #dddddd;
+                          text-align: left;
+                          padding: 8px;
+                        }
+
+
+                </style>
+	<h3>Central Tool DB</h3>
+   <p>Neuer Datensatz</p>
+   <p>Tool: <span id="group1" style="color:red"></span>/<span id="tool_type" style="color:red"></span>.</p>
+   <div id="cont"></div>
+   <script type="text/javascript">
+   var params = '<%= $params%>';
+   params = JSON.parse(params);
+   var values = '<%= $values%>';
+   values = JSON.parse(values);
+   var names = '<%= $names%>';
+   names = JSON.parse(names);
+   var group_name = '<%= $group_name%>';
+   var tool_type = '<%= $tool_type%>';
+   document.getElementById('group1').innerHTML = group_name;
+   document.getElementById('tool_type').innerHTML = tool_type;
+   var prev_i = -1;
+   for (var a = 0; a<params.length; a++) {
+    if (params[a] != 1 && params[a] != 0 && params[a] != 2){
+         params.splice(a, 1);
+         a = a-1; 
+    }
+  }
+
+  create_list(params,names,values);
+  function create_list(params,names,values){
+  var insert = params[params.length-1];
+  var nadiv = "";
+  var mydiv = "<form method=\"POST\" action=\"/save_params\">";
+  mydiv += "<input type=\"hidden\" name=\"insert\" value=\""+ insert +"\"/>"; 
+  mydiv += "<div id=\"table\"><table cellspacing=\"0\" cellpadding=\"0\">";
+  mydiv += "<thead><tr bgcolor=\"lightblue\"><th>Tool Part</th><th>Parameter</th><th>Value</th></tr></thead><tbody>";
+  mydiv += add_units();
+  for (var i = 0; i<params.length-1; i++) {
+      var name = "Technical Data["+ names[i] + "[" + values[i] + "]]";
+  		if (params[i] == 1){
+            if (names[i] != names[prev_i]) {
+               mydiv += "<tr bgcolor=\"lightgrey\">";
+               mydiv += "<td><b>"+ names[i] + "</b></td><td></td><td></td>";
+            } 
+            prev_i = i;
+            
+            mydiv += "<tr>";
+            mydiv += "<td> *** </td>";
+      		mydiv += "<td>"+values[i]+": </td><td><input type=\"text\" id=\""+name+"\" name=\""+ name +"\"/></td>";
+            mydiv += "</tr>";
+      } else {
+            nadiv += "<input type=\"hidden\" name=\""+ name +"\" value=\"NA\"/>";
+		}
+  }      
+  mydiv += "</tbody></table></div>";
+  mydiv +=nadiv;
+  mydiv += "<p><input type=\"submit\" value=\"Create\"></p></form>";
+  var elem = document.getElementById("cont");
+  elem.insertAdjacentHTML( 'beforeend', mydiv);
+  document.getElementById("Technical Data[General[Name]]").required = true;
+  document.getElementById('Technical Data[General[ToolType]]').value = tool_type;
+  }
+
+  function add_units(){
+  var mydiv = "";
+  var units = ["Length","Angle","Torque","Pressure"];
+  var def = ["mm","Degree","Nm","Bar"];
+  mydiv += "<tr bgcolor=\"lightgrey\">";
+  mydiv += "<td><b>Units</b></td><td></td><td></td>";
+  for (var e = 0; e < units.length; e++){
+  mydiv += "<tr><td> *** </td>";
+  mydiv += "<td>"+ units[e]+": </td><td><input type=\"text\" name=\"Units["+ units[e]+"]\" value=\""+ def[e] +"\"/></td>";
+  mydiv += "</tr>";}  
+  return mydiv;
+  }
+
+   </script>
+</html>

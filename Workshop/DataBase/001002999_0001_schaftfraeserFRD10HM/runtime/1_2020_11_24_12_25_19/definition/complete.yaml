@@ -1,0 +1,76 @@
+---
+Units:
+  Length: mm
+  Angle: Degree
+  Torque: Nm
+  Pressure: Bar
+Technical Data:
+  General:
+    Name: FR_D10 HM
+    ToolType: '1'
+    SpindleDirection: "-1"
+    Comment: ''
+  Simulation:
+    SimulationColor: '16744448'
+  Holder:
+    HolderHand: NA
+    HolderReliefAngle: NA
+    HolderClearanceAngle: NA
+    CuttingEdgeAngle: NA
+    CuttingEdgeAngleReference: NA
+    Wo: NA
+    OverallLength: '25'
+  Shank:
+    ShankDiameter: '3'
+    NeckDiameter: '10'
+    ShankAngle: '15'
+    ReachLength: '12'
+    ShankExtension: '0'
+  Cutter:
+    OverallLength: '23'
+    ToolDiameter: '10'
+    CuttingLength: '22'
+    FluteCount: '4'
+    ProfileRadius: NA
+    ToolAngle: NA
+    ThreadAngle: NA
+    Pitch: NA
+    ThreadPerUnit: NA
+    TipAngle: NA
+    TipLength: NA
+    StepLength: NA
+    TipDiameter: NA
+    TopDiameter: NA
+    TopProfileRadius: NA
+    ThreadMillType: NA
+    ChamferShape: NA
+  Insert:
+    InsertShape: NA
+    InsertAngle: NA
+    InsertICDiameter: NA
+    InsertLength: NA
+    InsertWidth: NA
+    InsertThickness: NA
+    InsertName: NA
+    InsertComment: NA
+    InsertClearanceAngle: NA
+    InsertHand: NA
+    ThreadHand: NA
+    ThreadType: NA
+    InsertBodyWidth: NA
+    InsertBodyLength: NA
+    InsertDimensionX: NA
+    InsertDimensionY: NA
+    NumberOfInserts: NA
+  Mounting:
+    MagazineNumber: ''
+    MagazineLocationNumber: ''
+  NC properties:
+    Number: ''
+    NcName: ''
+    ToolOffsetRegister: ''
+    EdgeShiftRegister: ''
+  Tooloffsets properties:
+    CuttingEdgePosition: ''
+    ControlEdge: ''
+    OffsetConfigurationNumber: ''

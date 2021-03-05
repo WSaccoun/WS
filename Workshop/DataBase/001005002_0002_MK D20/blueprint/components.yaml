@@ -1,0 +1,43 @@
+---
+Units:
+  Length: mm
+  Angle: Degree
+  Torque: Nm
+  Pressure: Bar
+  rmp: 1/min
+  Price: Euro
+Parts:
+  Cutter:
+    Manufacturer: test
+    Type: tzpetest
+    Technical Data:
+      CuttingDiameter: '5'
+      CuttingLength: '6'
+      OverallLength: '7'
+      ShankLength: '6.9'
+      ShankDiameter: '9'
+      NumberOfFlutes: '8'
+    ERP:
+      OrderNumber: '7'
+      Supplier: '6'
+      Price: '5'
+      Designation: '998.7'
+      Link: '7'
+      PackagingMaxDiameter: '8.00'
+      PackagingMaxLength: '8'
+  Holder:
+    Manufacturer: '7'
+    Type: '8'
+    Technical Data:
+      NominalHeigth: '8'
+      Design: '98'
+      Mandreltype/ToolHolderType: '9'
+      ToolHolder/Size: '0.3'
+    ERP:
+      OrderNumber: '8'
+      Supplier: '8'
+      Price: '7'
+      Designation: ''
+      Link: '7'
+      PackagingMaxDiameter: '8'
+      PackagingMaxLength: '9'

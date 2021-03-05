@@ -1,0 +1,60 @@
+Units:
+    Length: mm
+    Angle: Degree
+    Torque: Nm
+    rpm: 1/min
+    Pressure: Bar
+    Price: Euro
+Parts: 
+    Holder: 
+        Manufacturer: Sauter
+        Type: Drehwerkzeugaufnahme
+        TechnicalData: 
+            NominalHeight: 65.0
+            Design: universal
+            Mandreltype/ToolHolderType: Statische Doppelaufnahme
+            ToolHolder/Size: Werkzeughalter mit Vierkantaufnahme-25
+        ERP:
+            OrderNumber: 0.5.915.155
+            Supplier: Sauter
+            Price: 
+            Designation: 145864
+            Link: http://www.sauter-tools.com/sauterproductadvisor/details.htm?toolId=145864
+            PackagingMaxDiameter: 
+            PackagingMaxLength:
+    Shank: 
+        Manufacturer: Walter
+        Type: Schaftwerkzeug – Schraubenspannung
+        TechnicalData: 
+            ShankHeight: 25
+            ShankWidth: 25
+            FunctionalWidth: 32
+            FunctionalLength: 150
+            MaximumProtrudeLength: 21.2
+            Angel: 93
+        ERP:
+            OrderNumber: 	5327108
+            Supplier: Walter
+            Price: 
+            Designation: SVJBL2525M11
+            Link: https://www.walter-tools.com/de-de/search/pages/default.aspx#/product/SVJBL2525M11?query=%7B%22t%22:%22productdetails%22%7D
+            PackagingMaxDiameter: 
+            PackagingMaxLength:
+    Cutter: 
+        Manufacturer: Walter
+        Type: Wendeschneidplatte Rhombisch positiv 35°
+        TechnicalData: 
+            Shape: rhombisch
+            ISO-Designation: 
+            CuttingEdgeLength: 11.07
+            CuttingEdgeHeight: 
+            CornerRadius: 0.1
+        ERP:
+            OrderNumber: 7054077
+            Supplier: Walter
+            Price: 
+            Designation (ISO): VCGT110301-FM2 WSM20S
+            Designation (ANSI): VCGT2(2)0.2-FM2 WSM20S
+            Link: https://www.walter-tools.com/de-de/search/pages/default.aspx#/product/VCGT110301-FM2%20WSM20S
+            PackagingMaxDiameter: 
+            PackagingMaxLength:

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <div class="form_div">
+	<h3>Central Tool DB</h3>
+   <p>Neuer Datensatz</p>
+   <p>Select insert type: <select id="insert_type" onchange="singleSelectChangeText(id)"><option>Select tool type</option></select>
+	<form method="POST" action="/insert_ins"> 
+        <input type="hidden" id="type_num" name="type_num"> 
+        <input type="hidden" id="type_name" name="type_name"> 
+        <input type="submit" value="Next">
+   </form>
+   </div>	
+   <script type="text/javascript">
+   var types = '<%= $ins_types%>';
+   types = JSON.parse(types);
+   create_dropdown(types);
+                           function create_dropdown(groups){
+                           var select = document.getElementById("insert_type");
+                           for (var i = 0; i<groups.length; i++) {
+                                   var el = document.createElement("option");
+                                   el.textContent = groups[i][0];
+                                   el.value = groups[i][1];
+                                   select.appendChild(el);
+                            } }
+                            function singleSelectChangeText(id) {
+                                 var selObj = document.getElementById(id);
+                                 var selValue = selObj.options[selObj.selectedIndex].value;
+											var selVal = selObj.options[selObj.selectedIndex].text;
+                                 document.getElementById('type_num').value = selValue;
+                                 document.getElementById('type_name').value = selVal;
+                            }
+   </script>
+</html>

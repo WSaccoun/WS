@@ -1,0 +1,17 @@
+[2021-01-29 11:14:34] INFO  WEBrick 1.4.2
+[2021-01-29 11:14:34] INFO  ruby 2.6.6 (2020-03-31) [x86_64-linux]
+== Sinatra (v2.0.8.1) has taken the stage on 8080 for development with backup from WEBrick
+[2021-01-29 11:14:34] INFO  WEBrick::HTTPServer#start: pid=11363 port=8080
+127.0.0.1 - - [29/Jan/2021:11:14:45 +0100] "GET /start HTTP/1.1" 200 351 0.0100
+127.0.0.1 - - [29/Jan/2021:11:14:45 CET] "GET /start HTTP/1.1" 200 351
+- -> /start
+192.168.20.92 - - [29/Jan/2021:11:15:27 +0100] "GET /start HTTP/1.1" 200 351 0.0054
+192.168.20.92 - - [29/Jan/2021:11:15:27 CET] "GET /start HTTP/1.1" 200 351
+- -> /start
+192.168.20.92 - - [29/Jan/2021:11:15:27 +0100] "GET /favicon.ico HTTP/1.1" 404 474 0.0013
+192.168.20.92 - - [29/Jan/2021:11:15:27 CET] "GET /favicon.ico HTTP/1.1" 404 474
+http://192.168.20.163:8080/start -> /favicon.ico
+== Sinatra has ended his set (crowd applauds)
+[2021-01-29 11:22:24] INFO  going to shutdown ...
+[2021-01-29 11:22:24] INFO  WEBrick::HTTPServer#start done.
+{"Units":{"Length":"mm","Angle":"Degree","Torque":"Nm","rpm":"1/min","Pressure":"Bar","Price":"Euro"},"Parts":{"Holder":{"Manufacturer":"Rewotec","Type":"Hydrodehnspannfutter","TechnicalData":{"HSK":"HSK-A 63","d":100,"A":850,"D":300,"D1":500,"maxInsertionDepth":420,"maxAdjustementTrack":100,"l3":460},"ERP":{"OrderNumber":"203670 10x85","Supplier":"Rewotec","Price":35500,"Designation":"Hydrodehnspannfutter 10 mm, HSK-A 63, DIN 69893, G6,3 bei 15.000 1/min","Link":"https://www.rewotec.at/Hydrodehnspannfutter-6-mm-HSK-A-63-DIN-69893-G63-bei-15000-1-min","PackagingMaxDiameter":50,"PackagingMaxLength":125}},"Cutter":{"Manufacturer":"Sandvik","Type":"Schaftfräser","TechnicalData":{"CuttingDiameter":10,"CuttingLength":22,"OverallLength":72,"ShankLength":50,"ShankDiameter":10,"NumberOfFlutes":4},"ERP":{"OrderNumber":"2P342-1000-PA 1730","Supplier":"Sandvik","Price":4000,"Designation":"CoroMill Plura Vollhartmetall-Schaftfräser für die Heavy Duty Fräsbearbeitung","Link":"https://www.sandvik.coromant.com/de-de/products/Pages/productdetails.aspx?c=2P342-1000-PA%20%20%20%20%20%20%201730","PackagingMaxDiameter":10,"PackagingMaxLength":80}}}}
